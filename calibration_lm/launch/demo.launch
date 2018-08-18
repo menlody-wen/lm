@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+
+    <node pkg ="calibration_lm" name="calibrateNode" type="calibrateNode" output="screen">
+    </node>
+
+    <node pkg="rviz" type="rviz" name="rviz" respawn="true" args="-d $(find calibration_lm)/launch/demo.rviz"/>
+
+</launch>
+
